@@ -1,0 +1,40 @@
+/* Second page */
+
+#product-section-home > div {
+  height: 600px;
+  width: 100%;
+  transition: all 0.4s ease;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid white;
+}
+
+#product-section-home > div:hover {
+  border: 2px solid black;
+}
+
+#product-section-home div p {
+  color: #000;
+}
+#product-section-home div span {
+  color: #7e7e7e;
+}
+
+.priceTag {
+  color: black;
+}
+
+.productDetails {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 390px;
+  padding-left: 10px;
+}
+
+#footer {
+  height: 40vh;
+  width: 100vw;
+  background-color: black;
+}

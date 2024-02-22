@@ -1,0 +1,60 @@
+/* Navigation bar */
+
+#navBar {
+  background-color: #000;
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0px 50px; */
+  z-index: 10;
+  position: fixed;
+  font-family: gilroy;
+}
+
+#heroPage {
+  height: 80vh;
+  width: 100vw;
+  padding-top: 20vh;
+  font-family: gilroy;
+}
+
+#navTabs {
+  margin-right: 5%;
+  justify-content: space-between;
+  align-items: center;
+  width: 42vw;
+  display: none;
+}
+
+#navTabs a {
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.textNavTabs {
+  color: #fff;
+  border-radius: 50px;
+  transition: all 0.4s ease;
+  /* border: 2px solid black; */
+}
+
+.textNavTabs:hover {
+  transform: scale(1.1);
+  background-color: #fff;
+  color: #000;
+}
+
+.textNavTabs:active {
+  transform: scale(1);
+  background-color: #c7c7c7;
+}
+
+#navLogo {
+  color: #fff;
+  margin-left: 5%;
+  font-size: 30px;
+  font-family: wedding;
+}

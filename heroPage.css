@@ -1,0 +1,73 @@
+/* Hero page */
+
+#heroPage {
+  display: flex;
+  background-color: #000;
+  flex-direction: column;
+  width: 100vw;
+  height: 70vh;
+}
+
+#heroTitle {
+  width: 80vw;
+  height: 30vh;
+  padding: 4vw;
+  font-size: 40px;
+}
+
+.heroTxt-1 {
+  font-family: gilroy-light;
+}
+
+.heroTxt-2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: protest-strike;
+}
+
+.heroTxt-3 {
+  font-size: 15px;
+  padding-top: 10px;
+}
+.heroImageCon {
+  height: auto;
+  width: 50vw;
+  display: none;
+}
+
+.heroImageSubCon {
+  overflow: hidden;
+  position: relative;
+  height: 600px;
+  width: 675px;
+}
+
+.heroImage {
+  padding: 1vh 0vw;
+  transition: all 0.4s ease;
+  transform: rotateZ(-45deg);
+  position: absolute;
+  transition: all 1s ease;
+}
+
+.heroImage:hover {
+  padding-top: 0px;
+}
+
+#product-section-home {
+  padding: 4vh 10vw;
+  display: grid;
+  grid-gap: 15px;
+  height: auto;
+  grid-auto-flow: row dense;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+}
+
+#heroTitle img {
+  transition: all 0.4s ease;
+}
+
+#heroTitle img:hover {
+  padding-bottom: 5px;
+}
