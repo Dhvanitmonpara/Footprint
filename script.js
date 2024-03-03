@@ -6,13 +6,6 @@ slides.forEach((slides, index) => {
   slides.style.left = `${index * 100}%`;
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  setInterval(() => {
-    counter++;
-    slideImage();
-  }, 3000);
-});
-
 const slideImage = () => {
   slides.forEach((slide) => {
     slide.style.transform = `translateX(-${counter * 100}%) rotateZ(-45deg)`;
@@ -28,5 +21,5 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(() => {
     counter++;
     slideImage();
-  }, 3000);
+  }, 6000);
 });
