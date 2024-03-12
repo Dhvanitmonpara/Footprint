@@ -4,24 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="navBar.css" />
-    <link rel="stylesheet" href="heroPage.css">
-    <link rel="stylesheet" href="productPage.css">
-    <link rel="stylesheet" href="mediaQueries.css">
+    <link rel="stylesheet" href="heroPage.css" />
+    <link rel="stylesheet" href="productPage.css" />
+    <link rel="stylesheet" href="mediaQueries.css" />
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
+    <!-- registration page -->
+    <div id="loginPage">
+      <div class="reg-container loginToggler container">
+        <h2 id="registration-heading">User Registration</h2>
+        <form id="registration-form">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+            class="registration-field"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Confirm Password"
+            class="registration-field"
+            required
+          />
+          <div id="toggleCon">
+            <p class="toggleAcc">Already have an account?</p>
+            <p class="formToggleBtn" id="loginToggleBtn">click here</p>
+          </div>
+          <input type="submit" value="Register" />
+          <p class="error-message" id="registration-error-message"></p>
+        </form>
+      </div>
+      <div class="login-container container">
+        <h2 id="registration-heading">User Login</h2>
+        <form id="login-form">
+          <input
+            type="email"
+            id="userEmail"
+            name="userEmail"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="password"
+            id="userPassword"
+            name="userPassword"
+            placeholder="Password"
+            required
+          />
+          <div id="toggleCon">
+            <p class="toggleAcc">Don't have an account?</p>
+            <p class="formToggleBtn" id="regToggleBtn">click here</p>
+          </div>
+          <input type="submit" value="Register" />
+          <p class="error-message" id="login-error-message"></p>
+        </form>
+      </div>
+    </div>
+
     <!-- navigation bar -->
     <nav id="navBar">
       <div id="navLogo">Footprint</div>
       <ul id="navTabs">
-        <a class="textNavTabs">Home</a>
+        <a class="textNavTabs active" href="index.html">Home</a>
         <a class="textNavTabs">Men</a>
         <a class="textNavTabs">Women</a>
         <a class="textNavTabs">Trends</a>
         <a class="textNavTabs">Collection</a>
         <a class="textNavTabs">Sale</a>
-        <a class="textNavTabs">Blog</a>
+        <a class="textNavTabs" href="blog.html">Blog</a>
       </ul>
     </nav>
     <!-- Hero page -->
@@ -122,9 +193,7 @@
         </div>
       </div>
     </div>
-    <div id="footer">
-      
-    </div>
+    <div id="footer"></div>
     <!-- js file -->
     <script src="script.js"></script>
   </body>

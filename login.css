@@ -1,0 +1,79 @@
+#loginPage {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position: fixed;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 500px;
+  margin: 100px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: black;
+}
+.container input[type="submit"] {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.error-message {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#toggleCon{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.formToggleBtn {
+  color: #0056b3;
+  background-color: #fff;
+  border: 0px;
+  outline: 0px;
+  margin-left: 2px;
+  cursor: pointer;
+}
+
+.toggleAcc {
+  color: black;
+  font-size: small;
+}
+
+.loginToggler {
+  display: none;
+}

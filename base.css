@@ -24,6 +24,11 @@
     font-family: wedding;
     src: url(fonts/dancing_moon_script/dancing\ moon\ script.otf);
   }
+
+  @font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto/Roboto-Regular.ttf);
+  }
   
   *,
   body {
@@ -32,4 +37,3 @@
     color: #fff;
     /* font-family: gilroy; */
   }
-  
