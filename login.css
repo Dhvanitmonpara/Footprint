@@ -65,8 +65,9 @@
   background-color: #fff;
   border: 0px;
   outline: 0px;
-  margin-left: 2px;
+  margin-left: 5px;
   cursor: pointer;
+  font-size: 15px;
 }
 
 .toggleAcc {

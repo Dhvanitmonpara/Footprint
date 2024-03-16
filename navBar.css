@@ -24,7 +24,7 @@
   margin-right: 5%;
   justify-content: space-between;
   align-items: center;
-  width: 42vw;
+  width: 47vw;
   display: none;
 }
 
@@ -39,7 +39,6 @@
   color: #bebebe;
   border-radius: 50px;
   transition: all 0.4s ease;
-  /* border: 2px solid black; */
 }
 
 .textNavTabs:hover {
@@ -48,7 +47,7 @@
   color: #ffffff;
 }
 
-.active{
+.active {
   background-color: #fff;
   color: #000;
 }
@@ -64,4 +63,142 @@
   margin-left: 5%;
   font-size: 30px;
   font-family: wedding;
+}
+
+#user-id,
+#user-id-open {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  padding: 1px;
+}
+
+#user-id {
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+  border: 50px;
+}
+
+#user-id-open {
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+#user-id-open:hover {
+  background-color: #cbcaca;
+}
+
+#user-id-open:active {
+  transform: scale(0.9);
+}
+
+#cart {
+  height: 25px;
+  padding: 10px;
+  border-radius: 50px;
+  margin-left: 1vw;
+}
+
+#profile-con {
+  width: 20vw;
+  height: 100vh;
+  background-color: #dcdcdc;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 11;
+  animation: profileIn 0.4s alternate;
+}
+
+@keyframes profileIn {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+#profile-sec {
+  height: 60%;
+  margin-top: 40%;
+}
+
+.active-profile {
+  display: none;
+}
+
+#profile-pic-con {
+  margin-top: 200px;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-pic {
+  height: 250px;
+  width: 250px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+#profile-details {
+  height: auto;
+  width: 90%;
+  margin: 50px 0px 5% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-username {
+  font-family: gilroy;
+  color: #000;
+}
+
+#profile-email-add {
+  font-family: roboto;
+  color: #5a5a5a;
+}
+
+#log-out {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#log-out-btn {
+  background-color: #fff;
+  border-radius: 50px;
+  outline: 0;
+  border: 0;
+  color: #000;
+  height: 50px;
+  width: 100px;
+  font-family: roboto;
+  font-size: medium;
+  transition: all 0.3s ease-in-out;
+}
+
+#log-out-btn:hover {
+  transform: scale(1.1);
+}
+
+#log-out-btn:active {
+  transform: scale(1);
 }
