@@ -58,7 +58,7 @@ insertProfileData();
 
 function logoutAcc() {
   resetUserData();
-  window.location.reload();
+  window.location.href = "index.html"
 }
 
 logOutBtn.addEventListener("click", logoutAcc);
