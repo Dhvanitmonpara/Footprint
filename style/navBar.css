@@ -117,10 +117,10 @@
   top: 0;
   right: 0;
   z-index: 11;
-  animation: profileIn 0.4s alternate;
+  animation: sidebarIn 0.4s alternate;
 }
 
-@keyframes profileIn {
+@keyframes sidebarIn {
   from {
     right: -100%;
   }
@@ -201,4 +201,144 @@
 
 #log-out-btn:active {
   transform: scale(1);
+}
+
+#cart-bg {
+  display: none;
+  height: 100vh;
+  width: 40vw;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 25;
+  animation: sidebarIn 0.3s alternate;
+}
+
+#cart-head {
+  margin-top: 6%;
+  height: 10%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#cart-body {
+  height: 70vh;
+  width: 100%;
+  margin-top: 16%;
+  overflow: auto;
+}
+
+#cart-footer {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+#cart-total-amount {
+  color: #000;
+  font-family: roboto;
+  font-size: large;
+  width: 150px;
+}
+
+#cart-buy-now {
+  background-color: black;
+  border-radius: 50px;
+  height: 50px;
+  width: 250px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto;
+  font-size: larger;
+}
+
+#cart-title {
+  margin-left: 20px;
+  color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+
+#back-from-cart {
+  border-radius: 50px;
+  height: 22px;
+  padding: 10px;
+  margin-left: 6%;
+  transition: all 0.3s ease-in-out;
+}
+
+#back-from-cart:hover {
+  background-color: #cecece;
+}
+
+.cart-product-size {
+  color: #000;
+  font-family: roboto;
+  padding-bottom: 5px;
+}
+
+.cart-product-box {
+  margin: 10px 20px;
+  display: flex;
+  border: 2px solid white;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.cart-product-box:hover {
+  border: 2px solid rgb(137, 137, 137);
+}
+
+.cart-productDetails {
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-family: roboto;
+  flex-direction: column;
+}
+
+.cart-product-name {
+  color: #000;
+}
+
+.cart-product-category {
+  color: rgb(106, 106, 106);
+}
+.cart-product-price {
+  color: #000;
+}
+
+.remove-cart {
+  position: absolute; 
+  top: 40px;
+  right: 40px;
+  padding: 10px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.remove-cart:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+#cart-btn {
+  cursor: pointer;
+}
+
+.active-cart {
+  display: inline-block !important;
 }

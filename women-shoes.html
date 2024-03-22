@@ -6,11 +6,12 @@
     <title>Footprint</title>
     <link rel="stylesheet" href="style/base.css" />
     <link rel="stylesheet" href="style/heroPage.css" />
-
     <link rel="stylesheet" href="style/navBar.css" />
     <link rel="stylesheet" href="style/productPage.css" />
     <link rel="stylesheet" href="style/mediaQueries.css" />
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/category.css">
+
 
 </head>
 <body>
@@ -20,9 +21,9 @@
           <a class="textNavTabs" href="index.html">Home</a>
           <a class="textNavTabs" href="men-shoes.html">Men</a>
           <a class="textNavTabs active" href="women-shoes.html">Women</a>
-          <a class="textNavTabs">Trends</a>
+          <a class="textNavTabs" href="trends.html">Trends</a>
           <a class="textNavTabs" href="blog.html">Blog</a>
-          <a class="textNavTabs">Cart</a>
+          <a class="textNavTabs" id="cart-btn">Cart</a>
           <!-- <img src="icons/shopping-cart.png" class="textNavTabs" id="cart"></img> -->
           <img src="icons/profile-user.png" class="textNavTabs" id="user-id"></img>
         </ul>
@@ -44,8 +45,21 @@
           </div>
         </div>
       </div>
+      <div id="cart-bg">
+        <div id="cart-head">
+          <img src="icons/arrow.png" id="back-from-cart">
+          <div id="cart-title">Shopping cart</div>
+        </div>
+        <div id="cart-body">
+        </div>
+        <div id="cart-footer">
+          <div id="cart-total-amount">Total MRP: 0</div>
+          <div id="cart-buy-now">Buy now</div>
+        </div>
+        </div>
+      </div>
       <div id="product-section-home">
-        <div>
+        <div class="product-box">
           <img width="400px" src="img/air-force-1-07-shoes-WrLlWX.jpg" alt="" />
           <div class="productDetails">
             <p>Nike Airforce 1</p>
@@ -53,7 +67,7 @@
             <div class="priceTag">MRP: 10495</div>
           </div>
         </div>
-        <div>
+        <div class="product-box">
           <img width="400px" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dbad84ab-0d5f-41ba-8fdf-4eee2540721b/dunk-high-se-older-shoes-JhszFM.png" alt="" />
           <div class="productDetails">
             <p>Air Max Solo</p>
@@ -61,7 +75,7 @@
             <div class="priceTag">MRP: 7459</div>
           </div>
         </div>
-        <div>
+        <div class="product-box">
           <img
             width="400px"
             src="img/air-force-1-07-lv8-shoes-lPdFPQ.jpg"
@@ -73,7 +87,7 @@
             <div class="priceTag">MRP: 10695</div>
           </div>
         </div>
-        <div>
+        <div class="product-box">
           <img width="400px" src="img/air-force-1-07-shoe-NMmm1B.jpg" alt="" />
           <div class="productDetails">
             <p>Nike Airforce 1'07</p>
@@ -81,7 +95,7 @@
             <div class="priceTag">MRP: 9799</div>
           </div>
         </div>
-        <div>
+        <div class="product-box">
           <img width="400px" src="img/dunk-low-older-shoes-0xLzZx.png" alt="" />
           <div class="productDetails">
             <p>Dunk Low Older</p>
@@ -89,7 +103,7 @@
             <div class="priceTag">MRP: 9495</div>
           </div>
         </div>
-        <div>
+        <div class="product-box">
           <img width="400px" src="img/air-max-excee-shoes-FWztdv.png" alt="" />
           <div class="productDetails">
             <p>Air Max EXXEE</p>
@@ -97,7 +111,7 @@
             <div class="priceTag">MRP: 8999</div>
           </div>
         </div>
-        <div>
+        <div class="product-box">
           <img width="400px" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/993c740e-6d99-444a-8683-4bea6096bcbc/dunk-low-shoes-654MNX.png" alt="" />
           <div class="productDetails">
             <p>Air Max Solo</p>
@@ -105,7 +119,7 @@
             <div class="priceTag">MRP: 7459</div>
           </div>
         </div>
-        <div>
+        <div class="product-box">
           <img width="400px" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7514ef15-e369-4f2c-a945-99334c59edcd/dunk-low-retro-shoes-69h36X.png" alt="" />
           <div class="productDetails">
             <p>Air Max Solo</p>
@@ -113,7 +127,7 @@
             <div class="priceTag">MRP: 7459</div>
           </div>
         </div>
-        <div>
+        <div class="product-box">
           <img width="400px" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fece0006-9ac5-42cc-a109-6d2b439e9e36/dunk-low-se-shoes-FLw0k3.png" alt="" />
           <div class="productDetails">
             <p>Air Max Solo</p>
@@ -121,7 +135,7 @@
             <div class="priceTag">MRP: 7459</div>
           </div>
         </div>
-        <div>
+        <div class="product-box">
           <img width="400px" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5a649694-8b0c-4e0f-a281-4bd973e2b473/dunk-low-older-shoes-C7T1cx.png" alt="" />
           <div class="productDetails">
             <p>Air Max Solo</p>
@@ -129,7 +143,7 @@
             <div class="priceTag">MRP: 7459</div>
           </div>
         </div>
-        <div>
+        <div class="product-box">
           <img width="400px" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/de465bc6-91e2-4d4f-b0f7-38ca43a719b9/dunk-low-twist-shoes-V6NqFG.png" alt="" />
           <div class="productDetails">
             <p>Air Max Solo</p>
@@ -137,7 +151,7 @@
             <div class="priceTag">MRP: 7459</div>
           </div>
         </div>
-        <div>
+        <div class="product-box">
           <img width="400px" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/993c740e-6d99-444a-8683-4bea6096bcbc/dunk-low-shoes-654MNX.png" alt="" />
           <div class="productDetails">
             <p>Air Max Solo</p>
@@ -145,7 +159,7 @@
             <div class="priceTag">MRP: 7459</div>
           </div>
         </div>
-        <div>
+        <div class="product-box">
           <img width="400px" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0674efa7-e274-44d0-b7a5-84cd4dd2fc31/dunk-high-older-shoes-5g3xvG.png" alt="" />
           <div class="productDetails">
             <p>Air Max Solo</p>
@@ -153,7 +167,7 @@
             <div class="priceTag">MRP: 7459</div>
           </div>
         </div>
-        <div>
+        <div class="product-box">
           <img width="400px" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7514ef15-e369-4f2c-a945-99334c59edcd/dunk-low-retro-shoes-69h36X.png" alt="" />
           <div class="productDetails">
             <p>Air Max Solo</p>
@@ -161,12 +175,54 @@
             <div class="priceTag">MRP: 7459</div>
           </div>
         </div>
-        <div>
+        <div class="product-box">
           <img width="400px" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/02a5d480-e258-48e3-b913-474abb316d4f/dunk-low-older-shoes-DTH3jX.png" alt="" />
           <div class="productDetails">
             <p>Air Max Solo</p>
             <span>Men's Shoes</span>
             <div class="priceTag">MRP: 7459</div>
+          </div>
+        </div>
+      </div>
+      <div id="product-buy-bg" class="">
+        <div id="product-buy-con">
+          <div id="product-buy-left">
+            <div id="product-back-btn-con">
+              <img src="icons/arrow.png" height="30px" id="product-back-btn">
+            </div>
+            <img src="img/air-force-1-07-shoe-NMmm1B.jpg" alt="" id="product-buy-img">
+          </div>
+          <div id="product-buy-right">
+            <div id="shoe-details-buy">
+              <div id="shoe-details-buy-sub">
+  
+                <h1 id="product-name-buy">Nike air</h1>
+                <span id="product-category-buy">Men's shoes</span>
+              </div>
+              <p id="priceTagBuy">MRP: 3405</p>
+            </div>
+            <div id="shoes-size">
+              <p>UK 2.5</p>
+              <p>UK 3</p>
+              <p>UK 3.5</p>
+              <p>UK 4</p>
+              <p>UK 4.5</p>
+              <p>UK 5</p>
+              <p>UK 5.5</p>
+              <p class="activePara">UK 6</p>
+              <p>UK 6.5</p>
+              <p>UK 7</p>
+              <p>UK 7.5</p>
+              <p>UK 8</p>
+              <p>UK 8.5</p>
+              <p>UK 9</p>
+              <p>UK 9.5</p>
+            </div>
+            <div id="buy-btn-con">
+  
+              <button id="add-to-cart">Add to card</button>
+              <button id="buy-now">Buy now</button>
+            </div>
           </div>
         </div>
       </div>
@@ -180,11 +236,10 @@
             <h3>Quick Links</h3>
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="#">Men</a></li>
-              <li><a href="#">Women</a></li>
-              <li><a href="#">Trends</a></li>
+              <li><a href="men-shoes.html">Men</a></li>
+              <li><a href="women-shoes.html">Women</a></li>
+              <li><a href="trends.html">Trends</a></li>
               <li><a href="blog.html">Blog</a></li>
-              <li><a href="#">Cart</a></li>
             </ul>
           </div>
           <div class="footer-section contact">
@@ -214,5 +269,6 @@
       <script src="script/home.js"></script>
       <script src="script/script.js"></script>
       <script src="script/category-women.js"></script>
+      <script src="script/cart.js"></script>
 </body>
 </html>

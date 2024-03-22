@@ -52,17 +52,6 @@
   padding-top: 0px;
 }
 
-#product-section-home {
-  padding: 4vh 10vw;
-  display: grid;
-  grid-gap: 15px;
-  height: auto;
-  grid-auto-flow: row dense;
-  justify-content: center;
-  align-items: center;
-  width: 80vw;
-}
-
 #heroTitle img {
   transition: all 0.4s ease;
 }
