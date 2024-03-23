@@ -122,6 +122,15 @@ let cartSize = 0
   totalAmount()
 }
 
-
 const addToCart = document.getElementById("add-to-cart");
-addToCart.addEventListener("click", importData);
+
+function addToCartFunc () {
+  importData()
+
+  addToCart.innerText = "successfully added!"
+  setTimeout(() => {
+    addToCart.innerText = "Add to cart"
+  }, 3000);
+}
+
+addToCart.addEventListener("click", addToCartFunc);
