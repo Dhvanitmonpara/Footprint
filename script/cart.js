@@ -82,17 +82,16 @@ backFromCart.addEventListener("click", toggleCart);
 // imprting data
 
 const cartBody = document.getElementById("cart-body");
-const shoeSizes = document.querySelectorAll('#shoes-size p')
+const shoeSizes = document.querySelectorAll("#shoes-size p");
 
 function importData() {
+  let cartSize = 0;
 
-let cartSize = 0
-
-  shoeSizes.forEach((e)=>{
-    if(e.classList.contains('activePara')){
-      cartSize = e.innerText
+  shoeSizes.forEach((e) => {
+    if (e.classList.contains("activePara")) {
+      cartSize = e.innerText;
     }
-  })
+  });
 
   const newShoe = document.createElement("div");
   newShoe.innerHTML = `<img width="270px" id="cart-product-img" src="${productImgBuy.src}" alt="" />
@@ -114,23 +113,41 @@ let cartSize = 0
   cartBody.appendChild(newShoe);
 
   const cartRemove = newShoe.querySelector(".remove-cart");
-  cartRemove.addEventListener('click', (e)=>{
-    e.target.parentElement.parentElement.remove()
-    totalAmount()
+  cartRemove.addEventListener("click", (e) => {
+    e.target.parentElement.parentElement.remove();
+    totalAmount();
   });
 
-  totalAmount()
+  totalAmount();
 }
 
 const addToCart = document.getElementById("add-to-cart");
 
-function addToCartFunc () {
-  importData()
+function addToCartFunc() {
+  importData();
 
-  addToCart.innerText = "successfully added!"
+  addToCart.innerText = "successfully added!";
   setTimeout(() => {
-    addToCart.innerText = "Add to cart"
+    addToCart.innerText = "Add to cart";
   }, 3000);
 }
 
 addToCart.addEventListener("click", addToCartFunc);
+
+const productBuyCon = document.getElementById("product-buy-con");
+
+productBuyBg.addEventListener("click", (e) => {
+  if (!productBuyCon.contains(e.target)) {
+    toggleProductDetails();
+  }
+});
+
+// Escape key optimisation
+
+document.addEventListener("keydown", (e) => {
+  if (e.key == "Escape") {
+    productBuyBg.classList.remove("activateProductDetails");
+    profileCon.classList.add("active-profile");
+    cartBg.classList.remove("active-cart");
+  }
+});
