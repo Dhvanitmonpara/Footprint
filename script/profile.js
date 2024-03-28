@@ -37,6 +37,7 @@ regForm.addEventListener("submit", function (event) {
   }
 
   loginSuccesfully();
+  insertProfileData()
 });
 
 const loginForm = document.getElementById("login-form");
