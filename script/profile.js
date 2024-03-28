@@ -1,5 +1,22 @@
 let loginToken;
 
+const profileUsername = document.getElementById("profile-username");
+const profileEmailAdd = document.getElementById("profile-email-add");
+
+function insertProfileDataReg() {
+  try {
+    let rawDataProfileReg = localStorage.getItem("userData");
+    let dataProfileReg = JSON.parse(rawDataProfile);
+    let usernameDataReg = dataProfile.userName;
+    let emailDataReg = dataProfile.emailAdd;
+
+    profileUsername.innerText = usernameDataReg;
+    profileEmailAdd.innerText = emailDataReg;
+  } catch (err) {
+    console.log(err);
+  }
+}
+
 const regForm = document.getElementById("registration-form");
 regForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -37,7 +54,7 @@ regForm.addEventListener("submit", function (event) {
   }
 
   loginSuccesfully();
-  insertProfileData()
+  insertProfileDataReg()
 });
 
 const loginForm = document.getElementById("login-form");
