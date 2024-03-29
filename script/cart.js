@@ -79,7 +79,7 @@ cartBtn.addEventListener("click", toggleCart);
 const backFromCart = document.getElementById("back-from-cart");
 backFromCart.addEventListener("click", toggleCart);
 
-// imprting data
+// importing data
 
 const cartBody = document.getElementById("cart-body");
 const shoeSizes = document.querySelectorAll("#shoes-size p");

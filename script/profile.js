@@ -1,7 +1,7 @@
 let loginToken;
 
-const profileUsername = document.getElementById("profile-username");
-const profileEmailAdd = document.getElementById("profile-email-add");
+const profileUsernameReg = document.getElementById("profile-username");
+const profileEmailAddReg = document.getElementById("profile-email-add");
 
 function insertProfileDataReg() {
   try {
@@ -10,8 +10,8 @@ function insertProfileDataReg() {
     let usernameDataReg = dataProfile.userName;
     let emailDataReg = dataProfile.emailAdd;
 
-    profileUsername.innerText = usernameDataReg;
-    profileEmailAdd.innerText = emailDataReg;
+    profileUsernameReg.innerText = usernameDataReg;
+    profileEmailAddReg.innerText = emailDataReg;
   } catch (err) {
     console.log(err);
   }
