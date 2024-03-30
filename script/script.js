@@ -31,8 +31,11 @@ function toggleUserProfile() {
   profileCon.classList.toggle("active-profile");
 }
 
+const userIdVer = document.getElementById("user-id-ver");
+
 userIdActive.addEventListener("click", toggleUserProfile);
 userIdDesactive.addEventListener("click", toggleUserProfile);
+userIdVer.addEventListener("click", toggleUserProfile);
 
 // In the profile
 
@@ -58,7 +61,16 @@ insertProfileData();
 
 function logoutAcc() {
   resetUserData();
-  window.location.href = "index.html"
+  window.location.href = "index.html";
 }
 
 logOutBtn.addEventListener("click", logoutAcc);
+
+// responsive navbar
+
+const menuBar = document.querySelector("#menu-bar ");
+const verNavBg = document.getElementById("vertical-nav-bg");
+
+menuBar.addEventListener("click", () => {
+  verNavBg.classList.toggle("activeVerNav");
+});

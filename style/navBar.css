@@ -13,6 +13,19 @@
   font-family: gilroy;
 }
 
+#navBar i {
+  display: inline-block;
+  font-size: x-large;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  padding: 12px;
+  border-radius: 50px;
+}
+
+#navBar i:hover {
+  background-color:  rgb(79, 79, 79);
+}
+
 #heroPage {
   height: 80vh;
   width: 100vw;
@@ -21,15 +34,17 @@
 }
 
 #navTabs {
-  margin-right: 5%;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  width: 47vw;
+  margin-right: 5%;
+}
+
+.textNavTabs {
   display: none;
 }
 
 #navTabs a {
-  display: inline-block;
   font-size: 18px;
   padding: 10px 20px;
 }
@@ -111,7 +126,7 @@
 }
 
 #profile-con {
-  width: 20vw;
+  width: 100vw;
   height: 100vh;
   background-color: #dcdcdc;
   position: fixed;
@@ -131,8 +146,8 @@
 }
 
 #profile-sec {
-  height: 60%;
-  margin-top: 40%;
+  height: 50%;
+  margin-top: 10%;
 }
 
 .active-profile {
@@ -207,7 +222,7 @@
 #cart-bg {
   display: none;
   height: 100vh;
-  width: 40vw;
+  width: 100vw;
   background-color: #fff;
   position: fixed;
   top: 0;
@@ -342,4 +357,53 @@
 
 .active-cart {
   display: inline-block !important;
+}
+
+#vertical-nav-bg {
+  height: 80vh;
+  margin-top: 20vh;
+  width: 100vw;
+  background-color: black;
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  animation: verNav 0.4s alternate;
+}
+
+#vertical-nav-bg ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#vertical-nav-bg ul a {
+  list-style: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#vertical-nav-bg ul a:hover {
+  font-weight: 500;
+}
+
+#vertical-nav-bg ul a:active {
+  text-decoration: underline;
+}
+
+.activeVerNav {
+  display: flex !important;
+}
+
+@keyframes verNav {
+  0% {
+    top: -100%;
+  } 100% {
+    top: 0px;
+  }
 }

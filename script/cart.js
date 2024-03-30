@@ -76,6 +76,9 @@ function toggleCart() {
 const cartBtn = document.getElementById("cart-btn");
 cartBtn.addEventListener("click", toggleCart);
 
+const cartBtnVer = document.getElementById("cart-btn-ver");
+cartBtnVer.addEventListener("click", toggleCart);
+
 const backFromCart = document.getElementById("back-from-cart");
 backFromCart.addEventListener("click", toggleCart);
 

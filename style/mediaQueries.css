@@ -56,9 +56,6 @@
     font-size: 20px;
     padding-top: 23px;
   }
-  #navTabs {
-    display: flex;
-  }
   .heroImageCon {
     display: inline-block;
     width: 65vw;
@@ -76,6 +73,102 @@
   }
   .heroImageCon {
     width: 675px;
+  }
+  #navTabs {
+    display: flex;
+    margin-right: 5%;
+    justify-content: space-between;
+    align-items: center;
+    width: 47vw;
+  }
+  .textNavTabs {
+    display: inline-block;
+  }
+  #navBar i {
+    display: none;
+  }
+  #vertical-nav-bg {
+    display: none !important;
+  }
+
+  #profile-con {
+    width: 20vw;
+    height: 100vh;
+  }
+  #profile-sec {
+    height: 60%;
+    margin-top: 40%;
+  }
+  #cart-bg {
+    height: 100vh;
+    width: 40vw;
+  }
+  #product-buy-con {
+    height: 600px;
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1090px) {
+  #shoes-size {
+    grid-template-columns: 110px 110px;
+    justify-content: start;
+  }
+  #product-buy-right {
+    overflow-y: scroll;
+    height: auto;
+  }
+  #shoe-details-buy {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 25px;
+    padding-left: 0;
+  }
+  #buy-btn-con {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    align-items: start;
+  }
+  #buy-btn-con button {
+    width: 240px;
+  }
+}
+
+@media (max-width: 900px) {
+  #shoes-size {
+    grid-template-columns: 110px;
+    justify-content: center;
+  }
+  #buy-btn-con button {
+    width: 140px;
+  }
+  #product-name-buy {
+    font-size: xx-large;
+  }
+
+  #product-category-buy {
+    font-size: larger;
+    height: auto;
+  }
+
+  #shoe-details-buy {
+    height: auto;
+  }
+
+  #product-buy-right {
+    padding: 10px;
+  }
+  #buy-btn-con {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 560px) {
+  #product-buy-con {
+    flex-direction: column !important;
+    overflow-y: scroll !important;
   }
 }
 
