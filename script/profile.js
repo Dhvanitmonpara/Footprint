@@ -6,9 +6,9 @@ const profileEmailAddReg = document.getElementById("profile-email-add");
 function insertProfileDataReg() {
   try {
     let rawDataProfileReg = localStorage.getItem("userData");
-    let dataProfileReg = JSON.parse(rawDataProfile);
-    let usernameDataReg = dataProfile.userName;
-    let emailDataReg = dataProfile.emailAdd;
+    let dataProfileReg = JSON.parse(rawDataProfileReg);
+    let usernameDataReg = dataProfileReg.userName;
+    let emailDataReg = dataProfileReg.emailAdd;
 
     profileUsernameReg.innerText = usernameDataReg;
     profileEmailAddReg.innerText = emailDataReg;
